@@ -24,7 +24,9 @@
     "eject": "react-scripts eject",
     "eslint": "eslint --ext .js,.ts,.tsx --cache src/",
     "lint": "tsc --noEmit && npm run eslint",
-    "eslint-fix": "npm run eslint --fix"
+    "eslint-fix": "npm run eslint --fix",
+    "prepare": "husky install",
+    "format": "prettier --write ."
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -52,7 +54,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "faker": "^5.5.3",
-    "husky": "^8.0.3",
+    "husky": "^8.0.0",
     "mocker-data-generator": "^3.0.3",
     "prettier": "^3.0.0"
   }
