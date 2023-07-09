@@ -10,9 +10,10 @@
     "@types/node": "^16.18.36",
     "@types/react": "^18.2.13",
     "@types/react-dom": "^18.2.6",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^4.0.3",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
@@ -20,13 +21,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "eslint": "eslint --ext .js,.ts,.tsx --cache src/",
+    "lint": "tsc --noEmit && npm run eslint",
+    "eslint-fix": "npm run eslint --fix"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -39,5 +40,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "faker": "^5.5.3",
+    "husky": "^8.0.3",
+    "mocker-data-generator": "^3.0.3",
+    "prettier": "^3.0.0"
   }
 }
