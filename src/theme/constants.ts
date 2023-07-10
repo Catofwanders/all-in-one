@@ -1,0 +1,1 @@
+export const WARNING_CONTRAST_TEXT_COLOR = '#1C1C26';
