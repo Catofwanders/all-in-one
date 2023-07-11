@@ -9,13 +9,11 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - uses: actions/setup-node@v3
-            - run: npm --prefix ci
-            - run: 'npm --prefix run lint:javascript'
+            - run: 'npm run lint'
 
     tests:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
             - uses: actions/setup-node@v3
-            - run: npm --prefix ci
-            - run: 'npm --prefix run test:ci'
+            - run: 'npm run test'
