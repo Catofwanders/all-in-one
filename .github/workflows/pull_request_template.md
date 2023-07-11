@@ -9,3 +9,5 @@ information that would be helpful for reviewers.]
 References:
 [Add any references or issue/PR numbers that are related to this change,
 such as "Fixes #123" or "See PR #456"]
+
+[] No console.log in files
